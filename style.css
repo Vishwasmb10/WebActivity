@@ -1,0 +1,290 @@
+/* Dark Theme Styles */
+body {
+  background-color: #06001f;
+  color: #e0e0e0;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.navbar {
+  background-color: #000000;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1b0037;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .logo {
+  color: #e0e0e0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #1db954;
+}
+
+.intro {
+  text-align: center;
+  padding: 4rem 1rem;
+  /* background: linear-gradient(135deg, #06001f, #06001f); */
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  color: #1db954;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #b0b0b0;
+}
+
+.cards {
+  padding: 3rem 1rem;
+  
+}
+
+.cards .container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.7);
+  ;
+  border-radius: 15px;
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom:15px;
+
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.9);
+}
+
+.card h3 {
+  color: #1db954;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card p, .card ul {
+  font-size: 1rem;
+  color: #b0b0b0;
+}
+
+.contact {
+  padding: 3rem 1rem;
+  background-color: #1e1e1e;
+}
+
+.contact h2 {
+  color: #1db954;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form label {
+  color: #1db954;
+}
+
+form input, form textarea {
+  background-color: #121212;
+  color: #e0e0e0;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 0.8rem;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #1db954;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #148a3c;
+}
+
+.footer {
+  background-color: #1f1f1f;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+
+.footer p {
+  color: #b0b0b0;
+  margin: 0.5rem 0;
+}
+
+.footer .social-links {
+  margin-top: 1rem;
+}
+
+.footer .social-links a {
+  color: #1db954;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: #148a3c;
+}
+
+
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #e0e0e0;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #1db954;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1f1f1f;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #e0e0e0;
+    font-size: 1.5rem;
+  }
+}
+
+span
+{
+  color:rgb(255, 255, 255);
+}
+
+ul
+{
+  list-style-type:none ;
+}
+
+li
+{
+  font-size:18px;
+  margin-top:10px;
+}
+
+.card p
+{
+  font-size:18px;
+  margin-top:10px;
+}
+
+.contact .container
+{
+  padding-left:550px;
+}
+
+.contactdiv
+{
+  background-color:black;
+  display:inline-block;
+  padding:30px;
+  border-radius: 25px;
+  font-size:18px;
+  color:#b0b0b0dd;
+}

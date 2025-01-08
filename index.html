@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-container">
+      <h1 class="logo">Vishwas M Bharadwaj</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#cards">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <section id="intro" class="intro">
+    <div class="container">
+      <h2>Welcome to My Portfolio Website!</h2>
+      <p>Hi, I'm <span>Vishwas M Bharadwaj</span>, a computer Science Enthusiast. I love exploring new ideas and innovating.</p>
+    </div>
+  </section>
+
+  <section id="cards" class="cards">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="card">
+        <h3>Who Am I?</h3>
+        <p>I'm a curious individual with a knack for problem-solving. I enjoy working on challenging projects and constantly strive to learn new skills to improve myself.</p>
+      </div>
+      <div class="card">
+        <h3>Skills</h3>
+        <ul>
+          <li>Web Development</li>
+          <li>UI/UX Design</li>
+          <li>Project Management</li>
+          <li>Team Management</li>
+        </ul>
+      </div>
+    
+      
+      <div class="card">
+        <h3>Education</h3>
+        <p>Pursuing Bachelor's Degree in Computer science and Engineering from Malnad College of Engineering,Hassan.</p>
+      </div>
+      <div class="card">
+        <h3>Languages known</h3>
+        <ul>
+          <li>Java</li>
+          <li>Python</li>
+          <li>C</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Hobbies</h3>
+        <ul>
+          <li>Playing drums</li>
+          <li>Reading Novels</li>
+          <li>Traveling</li>
+          <li>Speed cubing</li>
+        </ul>
+      </div>
+    </div>
+
+    
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+
+    <div class="container">
+    <div class="contactdiv">
+      <p><b>Contact Number:</b> 7892933981</p>
+      <p><b>Email ID:</b> vishwasmb.hassan@gmail.com</p>
+      
+    </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="#" target="_blank">LinkedIn</a> |
+        <a href="#" target="_blank">GitHub</a> |
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
