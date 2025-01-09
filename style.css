@@ -276,7 +276,10 @@ li
 
 .contact .container
 {
-  padding-left:550px;
+  /* padding-left:550px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contactdiv
